@@ -1,0 +1,5 @@
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.csproj.AssemblyReference.cache
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.AssemblyInfoInputs.cache
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.AssemblyInfo.cs
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.csproj.CoreCompileInputs.cache

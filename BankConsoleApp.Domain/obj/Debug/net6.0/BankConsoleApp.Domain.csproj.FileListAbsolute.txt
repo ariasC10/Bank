@@ -1,0 +1,12 @@
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Domain\bin\Debug\net6.0\BankConsoleApp.Domain.deps.json
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Domain\bin\Debug\net6.0\BankConsoleApp.Domain.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Domain\bin\Debug\net6.0\BankConsoleApp.Domain.pdb
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Domain\obj\Debug\net6.0\BankConsoleApp.Domain.csproj.AssemblyReference.cache
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Domain\obj\Debug\net6.0\BankConsoleApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Domain\obj\Debug\net6.0\BankConsoleApp.Domain.AssemblyInfoInputs.cache
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Domain\obj\Debug\net6.0\BankConsoleApp.Domain.AssemblyInfo.cs
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Domain\obj\Debug\net6.0\BankConsoleApp.Domain.csproj.CoreCompileInputs.cache
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Domain\obj\Debug\net6.0\BankConsoleApp.Domain.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Domain\obj\Debug\net6.0\refint\BankConsoleApp.Domain.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Domain\obj\Debug\net6.0\BankConsoleApp.Domain.pdb
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Domain\obj\Debug\net6.0\ref\BankConsoleApp.Domain.dll

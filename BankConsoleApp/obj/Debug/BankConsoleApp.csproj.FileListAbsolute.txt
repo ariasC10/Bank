@@ -1,0 +1,8 @@
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp\bin\Debug\BankConsoleApp.exe.config
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp\bin\Debug\BankConsoleApp.exe
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp\bin\Debug\BankConsoleApp.pdb
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp\obj\Debug\BankConsoleApp.csproj.AssemblyReference.cache
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp\obj\Debug\BankConsoleApp.csproj.SuggestedBindingRedirects.cache
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp\obj\Debug\BankConsoleApp.csproj.CoreCompileInputs.cache
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp\obj\Debug\BankConsoleApp.exe
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp\obj\Debug\BankConsoleApp.pdb
