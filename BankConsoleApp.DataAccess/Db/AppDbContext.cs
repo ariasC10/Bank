@@ -1,4 +1,4 @@
-﻿using BankConsoleApp.Core.Accounts;
+﻿using BankConsoleApp.Core.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace BankConsoleApp.DataAccess.Db
@@ -15,3 +15,5 @@ namespace BankConsoleApp.DataAccess.Db
         }
     }
 }
+
+// scaffold-dbcontext "server=database-bank.c1k9xnmjxukl.us-east-1.rds.amazonaws.com; database=bank; user=admin; password=proyectojorge;" Pomelo.EntityFrameworkCore.Mysql -outputdir Models -context PostDbContext -force

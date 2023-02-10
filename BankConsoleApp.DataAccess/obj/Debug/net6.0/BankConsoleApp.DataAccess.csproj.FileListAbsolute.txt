@@ -20,3 +20,15 @@ D:\mauri\Documents\Actividades\Tarea_3\Bank\BankConsoleApp.DataAccess\obj\Debug\
 D:\mauri\Documents\Actividades\Tarea_3\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.pdb
 D:\mauri\Documents\Actividades\Tarea_3\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.genruntimeconfig.cache
 D:\mauri\Documents\Actividades\Tarea_3\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\ref\BankConsoleApp.DataAccess.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.DataAccess\bin\Debug\net6.0\BankConsoleApp.DataAccess.deps.json
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.DataAccess\bin\Debug\net6.0\BankConsoleApp.DataAccess.runtimeconfig.json
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.DataAccess\bin\Debug\net6.0\BankConsoleApp.DataAccess.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.DataAccess\bin\Debug\net6.0\BankConsoleApp.DataAccess.pdb
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.DataAccess\bin\Debug\net6.0\BankConsoleApp.Core.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.DataAccess\bin\Debug\net6.0\BankConsoleApp.Core.pdb
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.csproj.CopyComplete
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\refint\BankConsoleApp.DataAccess.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.pdb
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.genruntimeconfig.cache
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\ref\BankConsoleApp.DataAccess.dll

@@ -20,4 +20,8 @@
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="7.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BankConsoleApp.Core\BankConsoleApp.Core.csproj" />
+  </ItemGroup>
+
 </Project>

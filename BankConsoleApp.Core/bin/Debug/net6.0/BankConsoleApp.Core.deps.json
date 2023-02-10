@@ -6,17 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "BankConsoleApp.DataAccess/1.0.0": {
+      "BankConsoleApp.Core/1.0.0": {
         "dependencies": {
-          "BankConsoleApp.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.2",
           "Microsoft.EntityFrameworkCore.Design": "7.0.2",
-          "Microsoft.EntityFrameworkCore.Tools": "7.0.2",
           "MySql.Data.EntityFrameworkCore": "8.0.22",
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
         },
         "runtime": {
-          "BankConsoleApp.DataAccess.dll": {}
+          "BankConsoleApp.Core.dll": {}
         }
       },
       "BouncyCastle.NetCore/1.8.3": {
@@ -153,11 +151,6 @@
             "assemblyVersion": "7.0.2.0",
             "fileVersion": "7.0.222.58006"
           }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Tools/7.0.2": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "7.0.2"
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
@@ -1288,16 +1281,11 @@
             "fileVersion": "1.0.24212.1"
           }
         }
-      },
-      "BankConsoleApp.Core/1.0.0": {
-        "runtime": {
-          "BankConsoleApp.Core.dll": {}
-        }
       }
     }
   },
   "libraries": {
-    "BankConsoleApp.DataAccess/1.0.0": {
+    "BankConsoleApp.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1385,13 +1373,6 @@
       "sha512": "sha512-TbTGOdaGtjps3GP7rLWXEXzmP+EXhV8AwPE/ov0QYhs5i5vKZX5ZpVLMnco2MeMtiPgLyxE7DhQT8s1wlu190g==",
       "path": "microsoft.entityframeworkcore.relational/7.0.2",
       "hashPath": "microsoft.entityframeworkcore.relational.7.0.2.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.Tools/7.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-0Jx9feeGsUUlI+PEFkADyfQrGU+UIYh9N1I8ZO6X5bjYSKL2V1empkGTupvfrI7S9h4uA7aY8GQpjkCmIep7dg==",
-      "path": "microsoft.entityframeworkcore.tools/7.0.2",
-      "hashPath": "microsoft.entityframeworkcore.tools.7.0.2.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
       "type": "package",
@@ -2092,11 +2073,6 @@
       "sha512": "sha512-Zm2BdeanuncYs3NhCj4c9e1x3EXFzFBVv2wPEc/Dj4ZbI9R8ecLSR5frAsx4zJCPBtKQreQ7Q/KxJEohJZbfzA==",
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
-    },
-    "BankConsoleApp.Core/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }
