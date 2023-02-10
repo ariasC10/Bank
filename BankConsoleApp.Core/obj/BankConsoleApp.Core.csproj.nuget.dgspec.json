@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Domain\\BankConsoleApp.Core.csproj": {}
+    "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj": {}
   },
   "projects": {
-    "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Domain\\BankConsoleApp.Core.csproj": {
+    "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Domain\\BankConsoleApp.Core.csproj",
+        "projectUniqueName": "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj",
         "projectName": "BankConsoleApp.Core",
-        "projectPath": "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Domain\\BankConsoleApp.Core.csproj",
-        "packagesPath": "C:\\Users\\destr\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Domain\\obj\\",
+        "projectPath": "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj",
+        "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
+        "outputPath": "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\destr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
