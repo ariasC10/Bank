@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Domain\\BankConsoleApp.Domain.csproj",
-      "projectName": "BankConsoleApp.Domain",
-      "projectPath": "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Domain\\BankConsoleApp.Domain.csproj",
+      "projectUniqueName": "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Domain\\BankConsoleApp.Core.csproj",
+      "projectName": "BankConsoleApp.Core",
+      "projectPath": "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Domain\\BankConsoleApp.Core.csproj",
       "packagesPath": "C:\\Users\\destr\\.nuget\\packages\\",
       "outputPath": "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Domain\\obj\\",
       "projectStyle": "PackageReference",

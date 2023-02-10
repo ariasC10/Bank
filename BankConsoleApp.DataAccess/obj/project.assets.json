@@ -2166,14 +2166,14 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "BankConsoleApp.Domain/1.0.0": {
+      "BankConsoleApp.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/BankConsoleApp.Domain.dll": {}
+          "bin/placeholder/BankConsoleApp.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/BankConsoleApp.Domain.dll": {}
+          "bin/placeholder/BankConsoleApp.Core.dll": {}
         }
       }
     }
@@ -6869,16 +6869,17 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "BankConsoleApp.Domain/1.0.0": {
+    "BankConsoleApp.Core/1.0.0": {
       "type": "project",
-      "path": "../BankConsoleApp.Domain/BankConsoleApp.Domain.csproj",
-      "msbuildProject": "../BankConsoleApp.Domain/BankConsoleApp.Domain.csproj"
+      "path": "../BankConsoleApp.Domain/BankConsoleApp.Core.csproj",
+      "msbuildProject": "../BankConsoleApp.Domain/BankConsoleApp.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "BankConsoleApp.Domain >= 1.0.0",
+      "BankConsoleApp.Core >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.2",
+      "Microsoft.EntityFrameworkCore.Design >= 7.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.2",
       "MySql.Data.EntityFrameworkCore >= 8.0.22",
       "Pomelo.EntityFrameworkCore.MySql >= 7.0.0"
@@ -6911,8 +6912,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Domain\\BankConsoleApp.Domain.csproj": {
-              "projectPath": "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Domain\\BankConsoleApp.Domain.csproj"
+            "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Domain\\BankConsoleApp.Core.csproj": {
+              "projectPath": "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Domain\\BankConsoleApp.Core.csproj"
             }
           }
         }
@@ -6928,6 +6929,12 @@
         "targetAlias": "net6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.2, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.2, )"
           },

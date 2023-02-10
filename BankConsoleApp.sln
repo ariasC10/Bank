@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankConsoleApp", "BankConso
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankConsoleApp.DataAccess", "BankConsoleApp.DataAccess\BankConsoleApp.DataAccess.csproj", "{3EEF04F2-120F-4E66-9774-CE5001449582}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankConsoleApp.Domain", "BankConsoleApp.Domain\BankConsoleApp.Domain.csproj", "{0BD9EFF9-8EFF-4B81-A583-5D7262B9352E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankConsoleApp.Core", "BankConsoleApp.Domain\BankConsoleApp.Core.csproj", "{0BD9EFF9-8EFF-4B81-A583-5D7262B9352E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

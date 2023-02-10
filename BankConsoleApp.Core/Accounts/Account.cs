@@ -1,13 +1,12 @@
-﻿using BankConsoleApp.Domain.TransactionEntity;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BankConsoleApp.Domain.AccountEntity
+namespace BankConsoleApp.Core.Accounts
 {
-    public class Account
+    public partial class Account
     {
         int Id { get; set; }
         public string Owner { get; set; }
