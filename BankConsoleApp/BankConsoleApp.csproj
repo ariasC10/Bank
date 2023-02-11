@@ -49,6 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\BankConsoleApp.DataAccess\BankConsoleApp.DataAccess.csproj">
+      <Project>{3eef04f2-120f-4e66-9774-ce5001449582}</Project>
+      <Name>BankConsoleApp.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

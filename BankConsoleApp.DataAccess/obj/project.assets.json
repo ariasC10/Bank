@@ -6891,19 +6891,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\destr\\.nuget\\packages\\": {}
+    "C:\\Users\\mauri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.DataAccess\\BankConsoleApp.DataAccess.csproj",
+      "projectUniqueName": "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp.DataAccess\\BankConsoleApp.DataAccess.csproj",
       "projectName": "BankConsoleApp.DataAccess",
-      "projectPath": "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.DataAccess\\BankConsoleApp.DataAccess.csproj",
-      "packagesPath": "C:\\Users\\destr\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.DataAccess\\obj\\",
+      "projectPath": "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp.DataAccess\\BankConsoleApp.DataAccess.csproj",
+      "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
+      "outputPath": "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\destr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6917,8 +6917,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj": {
-              "projectPath": "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj"
+            "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj": {
+              "projectPath": "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj"
             }
           }
         }

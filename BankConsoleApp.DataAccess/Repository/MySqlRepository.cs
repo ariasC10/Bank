@@ -11,26 +11,30 @@ namespace BankConsoleApp.DataAccess.Repository
 {
     internal class MySqlRepository : IRepository<Account>
     {
-        private readonly DbContext _dbContext;
+        private readonly AppDbContext _dbContext;
 
         public MySqlRepository(AppDbContext dbContext)
         {
             _dbContext = dbContext;
         }
 
-        public Task<bool> Add(Account model)
+        public Task Insert(Account model)
         {
-            throw new NotImplementedException();
+            _dbContext.Accounts.Add(model);
+            _dbContext.SaveChanges();
+            return Task.CompletedTask;
         }
 
-        public Task<Account> GetById(int id)
+        public async Task<Account> GetById(int id)
         {
-            throw new NotImplementedException();
+            return _dbContext.Accounts.Find(id) ;
         }
 
-        public Task<bool> Update(Account model, double mount)
+        public Task Update(Account model, float mount)
         {
-            throw new NotImplementedException();
+            model.Balance += mount;
+            _dbContext.SaveChanges();
+            return Task.CompletedTask;
         }
     }
 }
