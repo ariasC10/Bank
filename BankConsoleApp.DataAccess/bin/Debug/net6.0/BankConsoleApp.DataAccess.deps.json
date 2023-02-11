@@ -1290,6 +1290,11 @@
         }
       },
       "BankConsoleApp.Core/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.2",
+          "MySql.Data.EntityFrameworkCore": "8.0.22",
+          "Pomelo.EntityFrameworkCore.MySql": "7.0.0"
+        },
         "runtime": {
           "BankConsoleApp.Core.dll": {}
         }

@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace BankConsoleApp.DataAccess.Repository
 {
-    internal class MySqlRepository : IRepository<Account>
+    public class AccountRepository : IRepository<Account>
     {
-        private readonly AppDbContext _dbContext;
+        private readonly MySqlDbContext _dbContext;
 
-        public MySqlRepository(AppDbContext dbContext)
+        public AccountRepository(MySqlDbContext dbContext)
         {
             _dbContext = dbContext;
         }
@@ -27,7 +27,7 @@ namespace BankConsoleApp.DataAccess.Repository
 
         public async Task<Account> GetById(int id)
         {
-            return _dbContext.Accounts.Find(id) ;
+            return _dbContext.Accounts.Find(id);
         }
 
         public Task Update(Account model, float mount)

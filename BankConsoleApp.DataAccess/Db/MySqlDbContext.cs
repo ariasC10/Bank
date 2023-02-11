@@ -3,13 +3,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BankConsoleApp.DataAccess.Db
 {
-    public partial class AppDbContext : DbContext
+    public partial class MySqlDbContext : DbContext
     {
-        public AppDbContext()
+        public MySqlDbContext()
         {
         }
 
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        public MySqlDbContext(DbContextOptions<MySqlDbContext> options) : base(options)
         {
         }
 
