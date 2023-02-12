@@ -16,6 +16,4 @@ public partial class Transaction
     public uint AccountNumber { get; set; }
 
     public virtual Account AccountNumberNavigation { get; set; } = null!;
-
-    
 }

@@ -36,7 +36,5 @@ namespace BankConsoleApp.DataAccess.Repository
             _dbContext.SaveChanges();
             return Task.CompletedTask;
         }
-
-
     }
 }
