@@ -15,10 +15,10 @@ public class BankApp : Account
     static void Main(string[] args)
     {
         int opc = int.Parse(Console.ReadLine());
-        switch(opc)
+        switch (opc)
         {
             case 1:
-                
+
                 break;
             case 2:
 
@@ -28,7 +28,7 @@ public class BankApp : Account
             case 4:
                 break;
         }
-    
+
     }
 
     Account account;
@@ -41,9 +41,9 @@ public class BankApp : Account
         _repository = repository;
     }
 
-    public Account addAccount() 
+    public Account addAccount()
     {
-        account= new Account
+        account = new Account
         {
             AccountNumber = uint.Parse(Console.ReadLine()),
             Owner = Console.ReadLine(),
@@ -61,15 +61,15 @@ public class BankApp : Account
     {
         transaction = new Transaction
         {
-           AccountNumber = uint.Parse(Console.ReadLine()),
-           TransactionNumber = new Random().Next(),
-           Mount = int.Parse(Console.ReadLine()),
-           CreationDate = new DateOnly(),
-           Description = Console.ReadLine(),
-           AccountNumberNavigation = account
+            AccountNumber = uint.Parse(Console.ReadLine()),
+            TransactionNumber = new Random().Next(),
+            Mount = int.Parse(Console.ReadLine()),
+            CreationDate = new DateOnly(),
+            Description = Console.ReadLine(),
+            AccountNumberNavigation = account
         };
-         _repository.Update(account, transaction.Mount);
-          return transaction;
+        _repository.Update(account, transaction.Mount);
+        return transaction;
     }
     public Account GetAccount(int Id)
     {
@@ -79,7 +79,7 @@ public class BankApp : Account
         {
             string atr = oProperty.Name;
             string valor = oProperty.GetValue(account).ToString();
-            Console.WriteLine(atr + " : " +valor);
+            Console.WriteLine(atr + " : " + valor);
         }
 
         return account;
