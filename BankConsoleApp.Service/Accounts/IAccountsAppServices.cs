@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BankConsoleApp.Core.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace BankConsoleApp.Service.Accounts
         public void DoTransaction(float mount, string description);
         public void GetBalanace();
         public void SelectAccount(uint id);
+
+        public bool AuthorizeTransaction(float amount, Account account);
 
     }
 }
