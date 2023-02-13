@@ -5,7 +5,6 @@ namespace BankConsoleApp.DataAccess.Db
 {
     public partial class MySqlDbContext : DbContext
     { 
-
         public virtual DbSet<Account> Accounts { get; set; }
         public virtual DbSet<Transaction> Transactions { get; set; }
         

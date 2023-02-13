@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankConsoleApp.DataAccess",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankConsoleApp.Core", "BankConsoleApp.Core\BankConsoleApp.Core.csproj", "{60A6EF38-FCC3-4790-9313-C2D3539F20C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankConsoleApp", "BankConsoleApp\BankConsoleApp.csproj", "{8B2782E5-CC9A-4744-9E45-61D2E1081A3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankConsoleApp", "BankConsoleApp\BankConsoleApp.csproj", "{8B2782E5-CC9A-4744-9E45-61D2E1081A3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankConsoleApp.Service", "BankConsoleApp.Service\BankConsoleApp.Service.csproj", "{E38761BB-5A74-474A-9B54-0C0F6EBC2201}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{8B2782E5-CC9A-4744-9E45-61D2E1081A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B2782E5-CC9A-4744-9E45-61D2E1081A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B2782E5-CC9A-4744-9E45-61D2E1081A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E38761BB-5A74-474A-9B54-0C0F6EBC2201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E38761BB-5A74-474A-9B54-0C0F6EBC2201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E38761BB-5A74-474A-9B54-0C0F6EBC2201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E38761BB-5A74-474A-9B54-0C0F6EBC2201}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
