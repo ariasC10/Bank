@@ -6832,19 +6832,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AriasC\\.nuget\\packages\\": {}
+    "C:\\Users\\mauri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj",
+      "projectUniqueName": "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj",
       "projectName": "BankConsoleApp.Core",
-      "projectPath": "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj",
-      "packagesPath": "C:\\Users\\AriasC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.Core\\obj\\",
+      "projectPath": "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj",
+      "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
+      "outputPath": "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\AriasC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

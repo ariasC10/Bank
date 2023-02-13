@@ -4,7 +4,11 @@ using Microsoft.EntityFrameworkCore;
 namespace BankConsoleApp.DataAccess.Db
 {
     public partial class MySqlDbContext : DbContext
-    {
+    { 
+
+        public virtual DbSet<Account> Accounts { get; set; }
+        public virtual DbSet<Transaction> Transactions { get; set; }
+        
         public MySqlDbContext()
         {
         }
@@ -12,11 +16,6 @@ namespace BankConsoleApp.DataAccess.Db
         public MySqlDbContext(DbContextOptions<MySqlDbContext> options) : base(options)
         {
         }
-
-        public virtual DbSet<Account> Accounts { get; set; }
-
-        public virtual DbSet<Transaction> Transactions { get; set; }
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseMySql("server=database-bank.c1k9xnmjxukl.us-east-1.rds.amazonaws.com;database=bank;user=admin;password=proyectojorge", ServerVersion.Parse("8.0.32-mysql"));
 

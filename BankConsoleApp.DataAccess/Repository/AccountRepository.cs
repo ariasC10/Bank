@@ -16,6 +16,7 @@ namespace BankConsoleApp.DataAccess.Repository
         public AccountRepository(MySqlDbContext dbContext)
         {
             _dbContext = dbContext;
+            _dbContext.Transactions.ToList();
         }
 
         public Task Insert(Account model)
@@ -25,14 +26,14 @@ namespace BankConsoleApp.DataAccess.Repository
             return Task.CompletedTask;
         }
 
-        public async Task<Account> GetById(int id)
-        {
+        public Account GetById(uint id)
+        {            
             return _dbContext.Accounts.Find(id);
         }
 
-        public Task Update(Account model, float mount)
+        public Task Update(Account model)
         {
-            model.Balance += mount;
+            _dbContext.Entry(model).State = EntityState.Modified;
             _dbContext.SaveChanges();
             return Task.CompletedTask;
         }

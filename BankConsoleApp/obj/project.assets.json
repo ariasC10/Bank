@@ -6551,19 +6551,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AriasC\\.nuget\\packages\\": {}
+    "C:\\Users\\mauri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp\\BankConsoleApp.csproj",
+      "projectUniqueName": "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp\\BankConsoleApp.csproj",
       "projectName": "BankConsoleApp",
-      "projectPath": "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp\\BankConsoleApp.csproj",
-      "packagesPath": "C:\\Users\\AriasC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp\\obj\\",
+      "projectPath": "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp\\BankConsoleApp.csproj",
+      "packagesPath": "C:\\Users\\mauri\\.nuget\\packages\\",
+      "outputPath": "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\AriasC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mauri\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6577,11 +6577,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj": {
-              "projectPath": "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj"
+            "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj": {
+              "projectPath": "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj"
             },
-            "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.DataAccess\\BankConsoleApp.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.DataAccess\\BankConsoleApp.DataAccess.csproj"
+            "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp.DataAccess\\BankConsoleApp.DataAccess.csproj": {
+              "projectPath": "D:\\mauri\\Documents\\Actividades\\Tarea_3\\Bank\\BankConsoleApp.DataAccess\\BankConsoleApp.DataAccess.csproj"
             }
           }
         }
