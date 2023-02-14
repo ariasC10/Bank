@@ -8,6 +8,7 @@ using System.Reflection;
 using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
+using static Google.Protobuf.Collections.MapField<TKey, TValue>;
 
 
 namespace BankConsoleApp.Service.Accounts;
@@ -112,17 +113,37 @@ public class AccountsAppServices : IAccountsAppServices
 
     }
 
-    public void GetBalanace(int accountNumber)
-    {
-       
-    }
+   
+
+        public void GetBalanace(int accountNumber)
+        {
+            var account = _AccountRepository.GetById((uint)accountNumber);
+                  
+        if (account != null)
+            {
+                CurrentAccount = account;
+                float balance = 0f;
+                foreach (var transaction in CurrentAccount.Transactions)
+                {
+                    balance += transaction.Mount;
+                }
+                Console.WriteLine($"Account balance: {balance}");
+            }
+            else
+            {
+                Console.WriteLine("Account not found.");
+            }
+        }
 
     public void SelectAccount(uint id)
     {
-       
 
+        CurrentAccount = _AccountRepository.GetById(id);
 
 
     }
+
+
+
     
 }
