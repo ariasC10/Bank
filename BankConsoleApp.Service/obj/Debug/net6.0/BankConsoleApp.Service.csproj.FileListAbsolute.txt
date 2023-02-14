@@ -1,0 +1,5 @@
+D:\Punto singular\Bank\BankConsoleApp.Service\obj\Debug\net6.0\BankConsoleApp.Service.csproj.AssemblyReference.cache
+D:\Punto singular\Bank\BankConsoleApp.Service\obj\Debug\net6.0\BankConsoleApp.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Punto singular\Bank\BankConsoleApp.Service\obj\Debug\net6.0\BankConsoleApp.Service.AssemblyInfoInputs.cache
+D:\Punto singular\Bank\BankConsoleApp.Service\obj\Debug\net6.0\BankConsoleApp.Service.AssemblyInfo.cs
+D:\Punto singular\Bank\BankConsoleApp.Service\obj\Debug\net6.0\BankConsoleApp.Service.csproj.CoreCompileInputs.cache

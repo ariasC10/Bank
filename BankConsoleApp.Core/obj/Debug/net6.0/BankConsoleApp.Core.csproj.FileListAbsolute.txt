@@ -12,3 +12,17 @@ D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Core\obj\De
 D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Core\obj\Debug\net6.0\ref\BankConsoleApp.Core.dll
 D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Core\bin\Debug\net6.0\BankConsoleApp.Core.runtimeconfig.json
 D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.genruntimeconfig.cache
+D:\Punto singular\Bank\BankConsoleApp.Core\bin\Debug\net6.0\BankConsoleApp.Core.deps.json
+D:\Punto singular\Bank\BankConsoleApp.Core\bin\Debug\net6.0\BankConsoleApp.Core.runtimeconfig.json
+D:\Punto singular\Bank\BankConsoleApp.Core\bin\Debug\net6.0\BankConsoleApp.Core.dll
+D:\Punto singular\Bank\BankConsoleApp.Core\bin\Debug\net6.0\BankConsoleApp.Core.pdb
+D:\Punto singular\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.csproj.AssemblyReference.cache
+D:\Punto singular\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Punto singular\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.AssemblyInfoInputs.cache
+D:\Punto singular\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.AssemblyInfo.cs
+D:\Punto singular\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.csproj.CoreCompileInputs.cache
+D:\Punto singular\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.dll
+D:\Punto singular\Bank\BankConsoleApp.Core\obj\Debug\net6.0\refint\BankConsoleApp.Core.dll
+D:\Punto singular\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.pdb
+D:\Punto singular\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.genruntimeconfig.cache
+D:\Punto singular\Bank\BankConsoleApp.Core\obj\Debug\net6.0\ref\BankConsoleApp.Core.dll

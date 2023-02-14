@@ -1,5 +1,6 @@
 ﻿using BankConsoleApp.Core.Models;
 using BankConsoleApp.DataAccess.Repository;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,73 +54,75 @@ public class AccountsAppServices : IAccountsAppServices
 
         await _AccountRepository.Update(newAccount);
     }
-}
 
-    public async Task DoTransaction(float mount, string description)
+
+    private bool AuthorizeTransaction(float amount, Account account)
     {
-    // si CurrentAccount es de tipo saving, no pede hacer depositos de menos de 100
-    // Verificar que tiene saldo suficiente si el mount es negativo -> private bool authorizeTransaction
-
-    // formato de las transacciones :
-    //  TransactionNumber es igual a -> AccountCurrent.Transactions.Count + 1
-    //  Asignar fecha actual -> DateOnly.FromDateTime(DateTime.Now)
-    //  Se le asigna el numero de cuenta de CurrentAccount
-    //  No agregar nada a AccountNumberNavigation
-
-    // realizar update del modelo
-
-    var currentAccount = await _accountRepository.GetById(AccountNumber);
-    if (currentAccount is SavingAccount && amount < 100)
-    {
-        throw new ArgumentException("Saving accounts can't deposit less than 100");
+        if (amount >= 0)
+        {
+            return account.Balance >= amount;
+        }
+        else
+        {
+            return account.AccountType == "credit" && Math.Abs(amount) <= account.Balance;
+        }
     }
 
-    if (!AuthorizeTransaction(currentAccount, amount))
+
+    public void DoTransaction(float mount, string description)
     {
-        throw new ArgumentException("Not enough funds");
+        // si CurrentAccount es de tipo saving, no pede hacer depositos de menos de 100
+        // Verificar que tiene saldo suficiente si el mount es negativo -> private bool authorizeTransaction
+
+        // formato de las transacciones :
+        //  TransactionNumber es igual a -> AccountCurrent.Transactions.Count + 1
+        //  Asignar fecha actual -> DateOnly.FromDateTime(DateTime.Now)
+        //  Se le asigna el numero de cuenta de CurrentAccount
+        //  No agregar nada a AccountNumberNavigation
+
+        // realizar update del modelo
+
+        if (CurrentAccount == null)
+        {
+            throw new NullReferenceException("Current account has not been selected");
+        }
+
+        if (CurrentAccount.AccountType == "saving" && mount < 100 && description.ToLower() != "interest")
+        {
+            throw new ArgumentOutOfRangeException("Saving accounts can only make deposits of 100 or more");
+        }
+
+        if (mount < 0 && !AuthorizeTransaction(-mount, CurrentAccount))
+        {
+            throw new ArgumentException("Insufficient balance");
+        }
+
+        var newTransaction = new Transaction
+        {
+            Mount = mount,
+            Description = description,
+            CreationDate = DateOnly.FromDateTime(DateTime.Now),
+            AccountNumber = CurrentAccount.AccountNumber
+        };
+
+        CurrentAccount.Transactions.Add(newTransaction);
+
+        _AccountRepository.Update(CurrentAccount);
+
+
     }
 
-    var transaction = new Transaction
+    public void GetBalanace(int accountNumber)
     {
-        TransactionNumber = currentAccount.Transactions.Count + 1,
-        Date = DateOnly.FromDateTime(DateTime.Now),
-        Amount = amount,
-        Description = description,
-        AccountNumber = AccountNumber
-    };
-
-    currentAccount.Balance += amount;
-    currentAccount.Transactions.Add(transaction);
-    await _accountRepository.Update(currentAccount);
-
-}
-
-private bool AuthorizeTransaction(Account account, float amount)
-{
-    if (account.Balance + amount < 0)
-    {
-        return false;
-    }
-    return true;
-}
-
-
-
-
-
-
-
-
-
-public void GetBalanace()
-    {
-        // Imprimir la suma de los montos de todas las transacciones de la cuenta
-        throw new NotImplementedException();
+       
     }
 
     public void SelectAccount(uint id)
     {
-        // Inicializar CurrentAccount
-        throw new NotImplementedException();
+       
+
+
+
     }
+    
 }

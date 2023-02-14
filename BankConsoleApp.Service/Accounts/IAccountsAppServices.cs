@@ -11,10 +11,10 @@ namespace BankConsoleApp.Service.Accounts
     {
         public void AddAccount(string owner, string accountType);
         public void DoTransaction(float mount, string description);
-        public void GetBalanace();
+        public void GetBalanace( int accountNumber);
         public void SelectAccount(uint id);
 
-        public bool AuthorizeTransaction(float amount, Account account);
+        
 
     }
 }
