@@ -1,4 +1,4 @@
-﻿/*
+﻿
 using System;
 using BankConsoleApp.DataAccess.Db;
 
@@ -41,7 +41,7 @@ namespace BankConsoleApp
                                 continue;
                             }
 
-                            db.AddAccount(accountType, owner, balance);
+                            db.AddAccount(owner, accountType);
                             db.SaveChanges();
 
                             Console.WriteLine("Cuenta agregada correctamente.");
@@ -93,7 +93,7 @@ namespace BankConsoleApp
 
 
 
-*/
+
 
 
 

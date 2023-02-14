@@ -3,3 +3,20 @@ D:\Punto singular\Bank\BankConsoleApp.Service\obj\Debug\net6.0\BankConsoleApp.Se
 D:\Punto singular\Bank\BankConsoleApp.Service\obj\Debug\net6.0\BankConsoleApp.Service.AssemblyInfoInputs.cache
 D:\Punto singular\Bank\BankConsoleApp.Service\obj\Debug\net6.0\BankConsoleApp.Service.AssemblyInfo.cs
 D:\Punto singular\Bank\BankConsoleApp.Service\obj\Debug\net6.0\BankConsoleApp.Service.csproj.CoreCompileInputs.cache
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Service\obj\Debug\net6.0\BankConsoleApp.Service.csproj.AssemblyReference.cache
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Service\obj\Debug\net6.0\BankConsoleApp.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Service\obj\Debug\net6.0\BankConsoleApp.Service.AssemblyInfoInputs.cache
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Service\obj\Debug\net6.0\BankConsoleApp.Service.AssemblyInfo.cs
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Service\obj\Debug\net6.0\BankConsoleApp.Service.csproj.CoreCompileInputs.cache
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Service\bin\Debug\net6.0\BankConsoleApp.Service.deps.json
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Service\bin\Debug\net6.0\BankConsoleApp.Service.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Service\bin\Debug\net6.0\BankConsoleApp.Service.pdb
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Service\bin\Debug\net6.0\BankConsoleApp.Core.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Service\bin\Debug\net6.0\BankConsoleApp.DataAccess.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Service\bin\Debug\net6.0\BankConsoleApp.Core.pdb
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Service\bin\Debug\net6.0\BankConsoleApp.DataAccess.pdb
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Service\obj\Debug\net6.0\BankConsoleApp.Service.csproj.CopyComplete
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Service\obj\Debug\net6.0\BankConsoleApp.Service.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Service\obj\Debug\net6.0\refint\BankConsoleApp.Service.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Service\obj\Debug\net6.0\BankConsoleApp.Service.pdb
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp.Service\obj\Debug\net6.0\ref\BankConsoleApp.Service.dll

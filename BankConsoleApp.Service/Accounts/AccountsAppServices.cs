@@ -8,18 +8,17 @@ using System.Reflection;
 using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
-using static Google.Protobuf.Collections.MapField<TKey, TValue>;
 
 
 namespace BankConsoleApp.Service.Accounts;
 public class AccountsAppServices : IAccountsAppServices
 {
-    private readonly IRepository<Account> _AccountRepository;
-    private Account? CurrentAccount;
+    private readonly IRepository<Account> _repository;
+    private Account CurrentAccount;
 
     public AccountsAppServices(IRepository<Account> accountRepository)
     {
-        _AccountRepository = accountRepository;
+        _repository = accountRepository;
     }
 
     public async void AddAccount(string owner, string accountType)
@@ -38,24 +37,10 @@ public class AccountsAppServices : IAccountsAppServices
             Balance = 0
         };
 
-        await _AccountRepository.Insert(newAccount);
+        await _repository.Insert(newAccount);
 
         CurrentAccount = newAccount;
-
-        var newTransaction = new Transaction
-        {
-            Mount = 0,
-            Description = "Initial Balance",
-            CreationDate = newAccount.CreationDate,
-            AccountNumber = newAccount.AccountNumber,
-            AccountNumberNavigation = newAccount
-        };
-
-        newAccount.Transactions.Add(newTransaction);
-
-        await _AccountRepository.Update(newAccount);
     }
-
 
     private bool AuthorizeTransaction(float amount, Account account)
     {
@@ -92,7 +77,7 @@ public class AccountsAppServices : IAccountsAppServices
         {
             throw new ArgumentOutOfRangeException("Saving accounts can only make deposits of 100 or more");
         }
-
+        //
         if (mount < 0 && !AuthorizeTransaction(-mount, CurrentAccount))
         {
             throw new ArgumentException("Insufficient balance");
@@ -108,42 +93,40 @@ public class AccountsAppServices : IAccountsAppServices
 
         CurrentAccount.Transactions.Add(newTransaction);
 
-        _AccountRepository.Update(CurrentAccount);
-
-
+        _repository.Update(CurrentAccount);
     }
 
-   
+    public void GetBalanace(int accountNumber)
+    {
+        var account = _repository.GetById((uint)accountNumber);
 
-        public void GetBalanace(int accountNumber)
+        if (account == null)
         {
-            var account = _AccountRepository.GetById((uint)accountNumber);
-                  
-        if (account != null)
-            {
-                CurrentAccount = account;
-                float balance = 0f;
-                foreach (var transaction in CurrentAccount.Transactions)
-                {
-                    balance += transaction.Mount;
-                }
-                Console.WriteLine($"Account balance: {balance}");
-            }
-            else
-            {
-                Console.WriteLine("Account not found.");
-            }
+            Console.WriteLine("Account not found.");
+            return;
         }
+
+        CurrentAccount = account;
+
+        float balance = 0f;
+        foreach (var transaction in CurrentAccount.Transactions)
+        {
+            balance += transaction.Mount;
+        }
+
+        Console.WriteLine($"Account balance: {balance}");
+    }
 
     public void SelectAccount(uint id)
     {
+        var account = _repository.GetById(id);
 
-        CurrentAccount = _AccountRepository.GetById(id);
+        if (account == null)
+        {
+            Console.WriteLine("Account not found.");
+            return;
+        }
 
-
+        CurrentAccount = account;
     }
-
-
-
-    
 }

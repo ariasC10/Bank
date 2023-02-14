@@ -112,3 +112,11 @@ D:\Punto singular\Bank\BankConsoleApp\obj\Debug\net6.0\refint\BankConsoleApp.dll
 D:\Punto singular\Bank\BankConsoleApp\obj\Debug\net6.0\BankConsoleApp.pdb
 D:\Punto singular\Bank\BankConsoleApp\obj\Debug\net6.0\BankConsoleApp.genruntimeconfig.cache
 D:\Punto singular\Bank\BankConsoleApp\obj\Debug\net6.0\ref\BankConsoleApp.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp\bin\Debug\net6.0\Humanizer.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp\bin\Debug\net6.0\System.CodeDom.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp\bin\Debug\net6.0\System.Text.Json.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll

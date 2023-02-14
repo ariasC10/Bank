@@ -15,5 +15,10 @@ public partial class Account
 
     public float Balance { get; set; }
 
-    public virtual ICollection<Transaction> Transactions { get; } = new List<Transaction>();
+    public List<Transaction> Transactions { get; set; }
+
+    public Account() 
+    {
+        Transactions = new List<Transaction>();
+    }
 }
