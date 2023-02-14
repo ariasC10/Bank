@@ -44,6 +44,8 @@ public class AccountsAppServices : IAccountsAppServices
 
     private bool AuthorizeTransaction(float amount, Account account)
     {
+	  
+ 	  string mainJG, hecarim, blabla;
         if (amount >= 0)
         {
             return account.Balance >= amount;
