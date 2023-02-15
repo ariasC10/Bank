@@ -9,6 +9,7 @@ namespace BankConsoleApp
     {
         static void Main(string[] args)
         {
+            ////////
             using (var db = new MySqlDbContext())
             {
                 while (true)
