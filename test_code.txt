@@ -1,0 +1,63 @@
+        var _context = new MySqlDbContext();
+        var _repository = new AccountRepository(_context);
+
+        //var account = new Account
+        //{
+        //    AccountNumber = 2,
+        //    Owner = "test2",
+        //    CreationDate = DateOnly.FromDateTime(DateTime.Now),
+        //    AccountType = "vip",
+        //    Balance = 0,
+        //};
+
+        var a = _repository.GetById(2);
+
+        var transaction = new Transaction
+        {
+            Mount = 20,
+            CreationDate = DateOnly.FromDateTime(DateTime.Now),
+            Description = "test",
+            AccountNumber = 2
+        };
+
+        //account.Transactions.Add(transaction);
+
+        //await _repository.Update(account, 20);
+
+        //Console.WriteLine(account.Owner);
+        //var a = account.Transactions.ToList();
+
+        //_context.Transactions.ToList();
+        //var a = _context.Accounts.Find((uint)2);
+
+        a.Transactions.Add(transaction);
+        _repository.Update(a);
+        Console.WriteLine(a.Owner + "," + a.Transactions.Count);
+        prnt(a);
+
+        var b = _repository.GetById(1);
+        prnt(b);
+
+
+
+
+        //account = await _repository.GetById(1);
+
+        //var b = account.Transactions.Count;
+
+        //foreach (var item in a)
+        //{
+        //    Console.WriteLine(item.Mount + "," + item.AccountNumber);
+        //}
+
+
+        //    Console.ReadKey();
+
+    }
+    public static void prnt(Account? x)
+    {
+        foreach (var item in x.Transactions)
+        {
+            Console.WriteLine(item.TransactionNumber + "," + item.Mount + " -> " + item.AccountNumber);
+        }
+    }

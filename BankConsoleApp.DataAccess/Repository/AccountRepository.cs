@@ -16,7 +16,6 @@ namespace BankConsoleApp.DataAccess.Repository
         public AccountRepository(MySqlDbContext dbContext)
         {
             _dbContext = dbContext;
-            _dbContext.Transactions.ToList();
         }
 
         public Task Insert(Account model)

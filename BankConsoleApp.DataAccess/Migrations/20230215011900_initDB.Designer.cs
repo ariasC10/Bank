@@ -11,84 +11,66 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BankConsoleApp.DataAccess.Migrations
 {
     [DbContext(typeof(MySqlDbContext))]
-    [Migration("20230214171924_test")]
-    partial class test
+    [Migration("20230215011900_initDB")]
+    partial class initDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .UseCollation("utf8mb4_0900_ai_ci")
                 .HasAnnotation("ProductVersion", "7.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
-
-            MySqlModelBuilderExtensions.HasCharSet(modelBuilder, "utf8mb4");
 
             modelBuilder.Entity("BankConsoleApp.Core.Models.Account", b =>
                 {
                     b.Property<uint>("AccountNumber")
-                        .HasColumnType("int unsigned")
-                        .HasColumnName("account_number");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int unsigned");
 
                     b.Property<string>("AccountType")
                         .IsRequired()
-                        .HasMaxLength(7)
-                        .HasColumnType("varchar(7)")
-                        .HasColumnName("account_type");
+                        .HasColumnType("longtext");
 
                     b.Property<float>("Balance")
-                        .HasColumnType("float")
-                        .HasColumnName("balance");
+                        .HasColumnType("float");
 
                     b.Property<DateOnly>("CreationDate")
-                        .HasColumnType("date")
-                        .HasColumnName("creation_date");
+                        .HasColumnType("date");
 
                     b.Property<string>("Owner")
                         .IsRequired()
-                        .HasMaxLength(45)
-                        .HasColumnType("varchar(45)")
-                        .HasColumnName("owner");
+                        .HasColumnType("longtext");
 
-                    b.HasKey("AccountNumber")
-                        .HasName("PRIMARY");
+                    b.HasKey("AccountNumber");
 
-                    b.ToTable("account", (string)null);
+                    b.ToTable("Accounts", (string)null);
                 });
 
             modelBuilder.Entity("BankConsoleApp.Core.Models.Transaction", b =>
                 {
                     b.Property<int>("TransactionNumber")
-                        .HasColumnType("int")
-                        .HasColumnName("transaction_number");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
                     b.Property<uint>("AccountNumber")
-                        .HasColumnType("int unsigned")
-                        .HasColumnName("account_number");
+                        .HasColumnType("int unsigned");
 
                     b.Property<DateOnly>("CreationDate")
-                        .HasColumnType("date")
-                        .HasColumnName("creation_date");
+                        .HasColumnType("date");
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .ValueGeneratedOnAdd()
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)")
-                        .HasColumnName("description")
-                        .HasDefaultValueSql("'N/A'");
+                        .HasColumnType("longtext");
 
                     b.Property<float>("Mount")
-                        .HasColumnType("float")
-                        .HasColumnName("mount");
+                        .HasColumnType("float");
 
-                    b.HasKey("TransactionNumber")
-                        .HasName("PRIMARY");
+                    b.HasKey("TransactionNumber");
 
-                    b.HasIndex(new[] { "AccountNumber" }, "fk_accountnumber_idx");
+                    b.HasIndex("AccountNumber");
 
-                    b.ToTable("transaction", (string)null);
+                    b.ToTable("Trasactions", (string)null);
                 });
 
             modelBuilder.Entity("BankConsoleApp.Core.Models.Transaction", b =>
@@ -96,8 +78,8 @@ namespace BankConsoleApp.DataAccess.Migrations
                     b.HasOne("BankConsoleApp.Core.Models.Account", "AccountNumberNavigation")
                         .WithMany("Transactions")
                         .HasForeignKey("AccountNumber")
-                        .IsRequired()
-                        .HasConstraintName("fk_accountnumber");
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("AccountNumberNavigation");
                 });

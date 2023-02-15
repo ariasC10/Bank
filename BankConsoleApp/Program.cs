@@ -1,7 +1,8 @@
 ﻿
 using System;
+using BankConsoleApp.Core.Models;
 using BankConsoleApp.DataAccess.Db;
-
+using BankConsoleApp.DataAccess.Repository;
 
 namespace BankConsoleApp
 {
@@ -9,7 +10,6 @@ namespace BankConsoleApp
     {
         static void Main(string[] args)
         {
-            ////////
             using (var db = new MySqlDbContext())
             {
                 while (true)
@@ -91,11 +91,3 @@ namespace BankConsoleApp
         }
     }
 }
-
-
-
-
-
-
-
-

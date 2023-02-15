@@ -23,12 +23,6 @@ public class AccountsAppServices : IAccountsAppServices
 
     public async void AddAccount(string owner, string accountType)
     {
-        // Generar el número de cuenta a partir de una seed -> private uint generateAccountNumber()
-        // Asignar fecha actual -> DateOnly.FromDateTime(DateTime.Now)
-        // Balance inicial 0
-
-        // Crear una nueva instancia de Account con los detalles proporcionados
-
         var newAccount = new Account
         {
             Owner = owner,
@@ -57,17 +51,6 @@ public class AccountsAppServices : IAccountsAppServices
 
     public void DoTransaction(float mount, string description)
     {
-        // si CurrentAccount es de tipo saving, no pede hacer depositos de menos de 100
-        // Verificar que tiene saldo suficiente si el mount es negativo -> private bool authorizeTransaction
-
-        // formato de las transacciones :
-        //  TransactionNumber es igual a -> AccountCurrent.Transactions.Count + 1
-        //  Asignar fecha actual -> DateOnly.FromDateTime(DateTime.Now)
-        //  Se le asigna el numero de cuenta de CurrentAccount
-        //  No agregar nada a AccountNumberNavigation
-
-        // realizar update del modelo
-
         if (CurrentAccount == null)
         {
             throw new NullReferenceException("Current account has not been selected");
@@ -77,7 +60,7 @@ public class AccountsAppServices : IAccountsAppServices
         {
             throw new ArgumentOutOfRangeException("Saving accounts can only make deposits of 100 or more");
         }
-        //
+        
         if (mount < 0 && !AuthorizeTransaction(-mount, CurrentAccount))
         {
             throw new ArgumentException("Insufficient balance");
@@ -88,7 +71,8 @@ public class AccountsAppServices : IAccountsAppServices
             Mount = mount,
             Description = description,
             CreationDate = DateOnly.FromDateTime(DateTime.Now),
-            AccountNumber = CurrentAccount.AccountNumber
+            AccountNumber = CurrentAccount.AccountNumber,
+            AccountNumberNavigation = CurrentAccount,
         };
 
         CurrentAccount.Transactions.Add(newTransaction);
@@ -123,8 +107,7 @@ public class AccountsAppServices : IAccountsAppServices
 
         if (account == null)
         {
-            Console.WriteLine("Account not found.");
-            return;
+            throw new NullReferenceException("Account not found.");
         }
 
         CurrentAccount = account;
