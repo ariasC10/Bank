@@ -23,8 +23,13 @@ public class AccountsAppServices : IAccountsAppServices
 
     public async void AddAccount(string owner, string accountType)
     {
+        var random = new Random(19390);
+        int number = random.Next(Int32.MinValue, Int32.MaxValue);
+        uint accountNumber = (uint)(number + (uint)Int32.MaxValue);
+
         var newAccount = new Account
         {
+            AccountNumber= accountNumber,
             Owner = owner,
             AccountType = accountType,
             CreationDate = DateOnly.FromDateTime(DateTime.Now),
@@ -34,7 +39,7 @@ public class AccountsAppServices : IAccountsAppServices
         await _repository.Insert(newAccount);
 
         CurrentAccount = newAccount;
-
+        Console.Write("\nAccount number selected: " + newAccount.AccountNumber);
         Console.WriteLine("The account was created succesfully!\n");
     }
 
