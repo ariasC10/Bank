@@ -8,8 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BankConsoleApp.Core
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.Core\
-=======
-build_property.ProjectDir = C:\Users\AriasC\Desktop\Académia PS\Bank\BankConsoleApp.Core\
->>>>>>> 9d820a6e3bd724bef18adff7f10e965b2768d893

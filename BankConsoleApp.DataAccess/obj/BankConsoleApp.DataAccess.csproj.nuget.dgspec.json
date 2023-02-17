@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\carlo\\OneDrive\\Escritorio\\Bank\\Bank\\BankConsoleApp.DataAccess\\BankConsoleApp.DataAccess.csproj": {}
   },
   "projects": {
@@ -13,30 +12,13 @@
         "projectPath": "C:\\Users\\carlo\\OneDrive\\Escritorio\\Bank\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj",
         "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\carlo\\OneDrive\\Escritorio\\Bank\\Bank\\BankConsoleApp.Core\\obj\\",
-=======
-    "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.DataAccess\\BankConsoleApp.DataAccess.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj",
-        "projectName": "BankConsoleApp.Core",
-        "projectPath": "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj",
-        "packagesPath": "C:\\Users\\AriasC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.Core\\obj\\",
->>>>>>> 9d820a6e3bd724bef18adff7f10e965b2768d893
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-=======
-          "C:\\Users\\AriasC\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 9d820a6e3bd724bef18adff7f10e965b2768d893
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -102,7 +84,6 @@
         }
       }
     },
-<<<<<<< HEAD
     "C:\\Users\\carlo\\OneDrive\\Escritorio\\Bank\\Bank\\BankConsoleApp.DataAccess\\BankConsoleApp.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -111,27 +92,13 @@
         "projectPath": "C:\\Users\\carlo\\OneDrive\\Escritorio\\Bank\\Bank\\BankConsoleApp.DataAccess\\BankConsoleApp.DataAccess.csproj",
         "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\carlo\\OneDrive\\Escritorio\\Bank\\Bank\\BankConsoleApp.DataAccess\\obj\\",
-=======
-    "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.DataAccess\\BankConsoleApp.DataAccess.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.DataAccess\\BankConsoleApp.DataAccess.csproj",
-        "projectName": "BankConsoleApp.DataAccess",
-        "projectPath": "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.DataAccess\\BankConsoleApp.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\AriasC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.DataAccess\\obj\\",
->>>>>>> 9d820a6e3bd724bef18adff7f10e965b2768d893
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-=======
-          "C:\\Users\\AriasC\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 9d820a6e3bd724bef18adff7f10e965b2768d893
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -146,13 +113,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-<<<<<<< HEAD
               "C:\\Users\\carlo\\OneDrive\\Escritorio\\Bank\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj": {
                 "projectPath": "C:\\Users\\carlo\\OneDrive\\Escritorio\\Bank\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj"
-=======
-              "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj": {
-                "projectPath": "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj"
->>>>>>> 9d820a6e3bd724bef18adff7f10e965b2768d893
               }
             }
           }
