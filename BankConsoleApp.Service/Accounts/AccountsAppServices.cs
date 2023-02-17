@@ -21,21 +21,10 @@ public class AccountsAppServices : IAccountsAppServices
         _repository = accountRepository;
     }
 
-    public AccountsAppServices()
-    {
-    }
-
- 
     public async void AddAccount(string owner, string accountType)
     {
-        // Instantiate random number generator using system-supplied value as seed.
-        var random = new Random(1939);
-        int number = random.Next(Int32.MinValue, Int32.MaxValue);
-        uint uintAccount = (uint)(number + (uint)Int32.MaxValue);
-
         var newAccount = new Account
         {
-            AccountNumber = uintAccount,
             Owner = owner,
             AccountType = accountType,
             CreationDate = DateOnly.FromDateTime(DateTime.Now),
@@ -47,10 +36,8 @@ public class AccountsAppServices : IAccountsAppServices
         CurrentAccount = newAccount;
     }
 
-    public bool AuthorizeTransaction(float amount)
+    private bool AuthorizeTransaction(float amount, Account account)
     {
-
-        Account account = CurrentAccount;
         if (amount >= 0)
         {
             return account.Balance >= amount;
@@ -74,7 +61,7 @@ public class AccountsAppServices : IAccountsAppServices
             throw new ArgumentOutOfRangeException("Saving accounts can only make deposits of 100 or more");
         }
         
-        if (mount < 0 && !AuthorizeTransaction(CurrentAccount.Balance))
+        if (mount < 0 && !AuthorizeTransaction(-mount, CurrentAccount))
         {
             throw new ArgumentException("Insufficient balance");
         }

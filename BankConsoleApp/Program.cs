@@ -3,7 +3,6 @@ using System;
 using BankConsoleApp.Core.Models;
 using BankConsoleApp.DataAccess.Db;
 using BankConsoleApp.DataAccess.Repository;
-using BankConsoleApp.Service.Accounts;
 
 namespace BankConsoleApp
 {
@@ -11,7 +10,6 @@ namespace BankConsoleApp
     {
         static void Main(string[] args)
         {
-            AccountsAppServices account = new AccountsAppServices();
             using (var db = new MySqlDbContext())
             {
                 while (true)
@@ -30,35 +28,36 @@ namespace BankConsoleApp
 
                     switch (opcion)
                     {
-                        case 1: //ADD ACCOUNT
-                            Console.Write("Nombre del propietario: ");
-                            var owner = Console.ReadLine();
-
+                        case 1:
                             Console.Write("Tipo de cuenta: ");
                             var accountType = Console.ReadLine();
-                            
-                            if(string.IsNullOrEmpty(owner) && string.IsNullOrEmpty(accountType))
+
+                            Console.Write("Propietario: ");
+                            var owner = Console.ReadLine();
+
+                            Console.Write("Saldo inicial: ");
+                            if (!decimal.TryParse(Console.ReadLine(), out decimal balance))
                             {
-                                Console.WriteLine("\nNO PUEDE INGRESAR VALORES NULOS");
-                                Console.Write("Nombre del propietario: ");
-                                owner = Console.ReadLine();
-
-                                Console.Write("Tipo de cuenta: ");
-                                accountType = Console.ReadLine();
-                                
+                                Console.WriteLine("Saldo no válido.");
                                 continue;
-                            }  
+                            }
 
-                            account.AddAccount(owner, accountType);
+                            db.AddAccount(owner, accountType);
                             db.SaveChanges();
 
                             Console.WriteLine("Cuenta agregada correctamente.");
                             break;
 
-                        case 2: //DO TRANSACTION
+                        case 2:
+                            Console.Write("Número de cuenta: ");
+                            if (!int.TryParse(Console.ReadLine(), out int accountNumber))
+                            {
+                                Console.WriteLine("Número de cuenta no válido.");
+                                continue;
+                            }
 
                             Console.Write("Monto: ");
-                            if (!float.TryParse(Console.ReadLine(), out float amount))
+                            if (!decimal.TryParse(Console.ReadLine(), out decimal amount))
                             {
                                 Console.WriteLine("Monto no válido.");
                                 continue;
@@ -66,20 +65,21 @@ namespace BankConsoleApp
 
                             Console.Write("Descripción: ");
                             var description = Console.ReadLine();
-                            if (string.IsNullOrEmpty(description))
+
+                            var success = db.DoTransaction(accountNumber, amount, description);
+                            if (success)
                             {
-                                description = Console.ReadLine();
-                                Console.WriteLine("Ingrese una descripción.");
-                                continue;
+                                db.SaveChanges();
+                                Console.WriteLine("Transacción realizada correctamente.");
                             }
-                            account.AuthorizeTransaction(amount);
-                            account.DoTransaction(amount, description);
-                            db.SaveChanges();
-                            Console.WriteLine("Transacción realizada correctamente.");
-                                                                             
+                            else
+                            {
+                                Console.WriteLine("Error al realizar la transacción.");
+                            }
+
                             break;
 
-                        case 3: //GET 
+                        case 3:
                             return;
 
                         default:
