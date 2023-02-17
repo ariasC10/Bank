@@ -26,3 +26,17 @@ D:\Punto singular\Bank\BankConsoleApp.Core\obj\Debug\net6.0\refint\BankConsoleAp
 D:\Punto singular\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.pdb
 D:\Punto singular\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.genruntimeconfig.cache
 D:\Punto singular\Bank\BankConsoleApp.Core\obj\Debug\net6.0\ref\BankConsoleApp.Core.dll
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.Core\bin\Debug\net6.0\BankConsoleApp.Core.deps.json
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.Core\bin\Debug\net6.0\BankConsoleApp.Core.runtimeconfig.json
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.Core\bin\Debug\net6.0\BankConsoleApp.Core.dll
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.Core\bin\Debug\net6.0\BankConsoleApp.Core.pdb
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.csproj.AssemblyReference.cache
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.AssemblyInfoInputs.cache
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.AssemblyInfo.cs
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.dll
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.Core\obj\Debug\net6.0\refint\BankConsoleApp.Core.dll
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.pdb
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.Core\obj\Debug\net6.0\BankConsoleApp.Core.genruntimeconfig.cache
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.Core\obj\Debug\net6.0\ref\BankConsoleApp.Core.dll

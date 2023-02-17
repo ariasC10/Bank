@@ -36,19 +36,6 @@ public class AccountsAppServices : IAccountsAppServices
         CurrentAccount = newAccount;
     }
 
-    private bool AuthorizeTransaction(float amount, Account account)
-    {
-        if (amount >= 0)
-        {
-            return account.Balance >= amount;
-        }
-        else
-        {
-            return account.AccountType == "credit" && Math.Abs(amount) <= account.Balance;
-        }
-    }
-
-
     public void DoTransaction(float mount, string description)
     {
         if (CurrentAccount == null)
@@ -61,10 +48,6 @@ public class AccountsAppServices : IAccountsAppServices
             throw new ArgumentOutOfRangeException("Saving accounts can only make deposits of 100 or more");
         }
         
-        if (mount < 0 && !AuthorizeTransaction(-mount, CurrentAccount))
-        {
-            throw new ArgumentException("Insufficient balance");
-        }
 
         var newTransaction = new Transaction
         {
@@ -75,9 +58,23 @@ public class AccountsAppServices : IAccountsAppServices
             AccountNumberNavigation = CurrentAccount,
         };
 
+
+
         CurrentAccount.Transactions.Add(newTransaction);
+        if(mount < 0)
+        {
+            CurrentAccount.Balance = CurrentAccount.Balance - mount;
+        }
+        else
+        {
+            CurrentAccount.Balance = CurrentAccount.Balance+ mount;
+        }
+
 
         _repository.Update(CurrentAccount);
+
+        Console.WriteLine("The transaction was successfully ☺☺☺");
+
     }
 
     public void GetBalanace(int accountNumber)
@@ -101,15 +98,64 @@ public class AccountsAppServices : IAccountsAppServices
         Console.WriteLine($"Account balance: {balance}");
     }
 
-    public void SelectAccount(uint id)
+    public bool SelectAccount(uint id)
     {
         var account = _repository.GetById(id);
 
         if (account == null)
         {
+            return false;
             throw new NullReferenceException("Account not found.");
         }
 
         CurrentAccount = account;
+        return true;
     }
+
+    public void showAccounts()
+    {
+        _repository.showAccounts();
+        
+    }
+
+    public bool respositoryEmpty()
+    {
+        int length = _repository.numberOfAccounts();
+        if(length == 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+    }
+
+    public void showTransactions()
+    {
+        Console.WriteLine("Transaction number      " + "Type          " + "Mount               "  + "Description       " + "Date");
+
+        foreach (var transaction in CurrentAccount.Transactions)
+        {
+            Console.WriteLine(transaction.TransactionNumber + " " + GetTypeTransaction(transaction) + "  " + transaction.Mount + "  " + transaction.Description
+                + "  " + transaction.CreationDate); ;
+        }
+
+    }
+
+    private string GetTypeTransaction(Transaction trans)
+    {
+        if(trans.Mount < 0)
+        {
+            return "Withdrawal";
+        }
+        else
+        {
+            return "Deposit";
+        }
+        
+    }
+
+
 }

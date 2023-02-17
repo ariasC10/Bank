@@ -10,6 +10,7 @@
         "dependencies": {
           "BankConsoleApp.Core": "1.0.0",
           "BankConsoleApp.DataAccess": "1.0.0",
+          "BankConsoleApp.Service": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "7.0.3"
         },
         "runtime": {
@@ -1301,6 +1302,15 @@
         "runtime": {
           "BankConsoleApp.DataAccess.dll": {}
         }
+      },
+      "BankConsoleApp.Service/1.0.0": {
+        "dependencies": {
+          "BankConsoleApp.Core": "1.0.0",
+          "BankConsoleApp.DataAccess": "1.0.0"
+        },
+        "runtime": {
+          "BankConsoleApp.Service.dll": {}
+        }
       }
     }
   },
@@ -2100,6 +2110,11 @@
       "sha512": ""
     },
     "BankConsoleApp.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BankConsoleApp.Service/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

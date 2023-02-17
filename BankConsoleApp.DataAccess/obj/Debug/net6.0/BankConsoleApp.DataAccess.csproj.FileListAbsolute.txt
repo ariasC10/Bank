@@ -49,3 +49,20 @@ D:\Punto singular\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\refint\BankCon
 D:\Punto singular\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.pdb
 D:\Punto singular\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.genruntimeconfig.cache
 D:\Punto singular\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\ref\BankConsoleApp.DataAccess.dll
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.DataAccess\bin\Debug\net6.0\BankConsoleApp.DataAccess.deps.json
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.DataAccess\bin\Debug\net6.0\BankConsoleApp.DataAccess.runtimeconfig.json
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.DataAccess\bin\Debug\net6.0\BankConsoleApp.DataAccess.dll
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.DataAccess\bin\Debug\net6.0\BankConsoleApp.DataAccess.pdb
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.DataAccess\bin\Debug\net6.0\BankConsoleApp.Core.dll
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.DataAccess\bin\Debug\net6.0\BankConsoleApp.Core.pdb
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.csproj.AssemblyReference.cache
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.AssemblyInfoInputs.cache
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.AssemblyInfo.cs
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.csproj.CopyComplete
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.dll
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\refint\BankConsoleApp.DataAccess.dll
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.pdb
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\BankConsoleApp.DataAccess.genruntimeconfig.cache
+C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp.DataAccess\obj\Debug\net6.0\ref\BankConsoleApp.DataAccess.dll

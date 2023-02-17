@@ -6832,19 +6832,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\destr\\.nuget\\packages\\": {}
+    "C:\\Users\\carlo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj",
+      "projectUniqueName": "C:\\Users\\carlo\\OneDrive\\Escritorio\\Bank\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj",
       "projectName": "BankConsoleApp.Core",
-      "projectPath": "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj",
-      "packagesPath": "C:\\Users\\destr\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\destr\\source\\repos\\Tasks\\BankConsoleApp\\Bank\\BankConsoleApp.Core\\obj\\",
+      "projectPath": "C:\\Users\\carlo\\OneDrive\\Escritorio\\Bank\\Bank\\BankConsoleApp.Core\\BankConsoleApp.Core.csproj",
+      "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\carlo\\OneDrive\\Escritorio\\Bank\\Bank\\BankConsoleApp.Core\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\destr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6852,6 +6857,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
