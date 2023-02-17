@@ -14,7 +14,7 @@ namespace BankConsoleApp.Service.Accounts;
 public class AccountsAppServices : IAccountsAppServices
 {
     private readonly IRepository<Account> _repository;
-    private Account CurrentAccount;
+    private Account? CurrentAccount;
 
     public AccountsAppServices(IRepository<Account> accountRepository)
     {
@@ -34,9 +34,11 @@ public class AccountsAppServices : IAccountsAppServices
         await _repository.Insert(newAccount);
 
         CurrentAccount = newAccount;
+
+        Console.WriteLine("The account was created succesfully!\n");
     }
 
-    public void DoTransaction(float mount, string description)
+    public async void DoTransaction(float mount, string description)
     {
         if (CurrentAccount == null)
         {
@@ -48,7 +50,13 @@ public class AccountsAppServices : IAccountsAppServices
             throw new ArgumentOutOfRangeException("Saving accounts can only make deposits of 100 or more");
         }
         
-
+        if (CurrentAccount.Balance + mount < 0)
+        {
+            throw new ArgumentOutOfRangeException("Insufficient balance");
+        }
+        
+        CurrentAccount.Balance = CurrentAccount.Balance + mount;
+        
         var newTransaction = new Transaction
         {
             Mount = mount,
@@ -58,36 +66,19 @@ public class AccountsAppServices : IAccountsAppServices
             AccountNumberNavigation = CurrentAccount,
         };
 
-
-
         CurrentAccount.Transactions.Add(newTransaction);
-        if(mount < 0)
-        {
-            CurrentAccount.Balance = CurrentAccount.Balance - mount;
-        }
-        else
-        {
-            CurrentAccount.Balance = CurrentAccount.Balance+ mount;
-        }
 
+        await _repository.Update(CurrentAccount);
 
-        _repository.Update(CurrentAccount);
-
-        Console.WriteLine("The transaction was successfully ☺☺☺");
-
+        Console.WriteLine("The transaction was successfully!\n");
     }
 
-    public void GetBalanace(int accountNumber)
+    public void GetBalanace()
     {
-        var account = _repository.GetById((uint)accountNumber);
-
-        if (account == null)
+        if (CurrentAccount == null)
         {
-            Console.WriteLine("Account not found.");
-            return;
+            throw new NullReferenceException("Current account has not been selected");
         }
-
-        CurrentAccount = account;
 
         float balance = 0f;
         foreach (var transaction in CurrentAccount.Transactions)
@@ -95,7 +86,7 @@ public class AccountsAppServices : IAccountsAppServices
             balance += transaction.Mount;
         }
 
-        Console.WriteLine($"Account balance: {balance}");
+        Console.WriteLine($"Account balance: {balance}\n");
     }
 
     public bool SelectAccount(uint id)
@@ -104,58 +95,12 @@ public class AccountsAppServices : IAccountsAppServices
 
         if (account == null)
         {
-            return false;
             throw new NullReferenceException("Account not found.");
         }
 
         CurrentAccount = account;
+        Console.WriteLine(CurrentAccount.Owner);
+
         return true;
     }
-
-    public void showAccounts()
-    {
-        _repository.showAccounts();
-        
-    }
-
-    public bool respositoryEmpty()
-    {
-        int length = _repository.numberOfAccounts();
-        if(length == 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-
-    }
-
-    public void showTransactions()
-    {
-        Console.WriteLine("Transaction number      " + "Type          " + "Mount               "  + "Description       " + "Date");
-
-        foreach (var transaction in CurrentAccount.Transactions)
-        {
-            Console.WriteLine(transaction.TransactionNumber + " " + GetTypeTransaction(transaction) + "  " + transaction.Mount + "  " + transaction.Description
-                + "  " + transaction.CreationDate); ;
-        }
-
-    }
-
-    private string GetTypeTransaction(Transaction trans)
-    {
-        if(trans.Mount < 0)
-        {
-            return "Withdrawal";
-        }
-        else
-        {
-            return "Deposit";
-        }
-        
-    }
-
-
 }

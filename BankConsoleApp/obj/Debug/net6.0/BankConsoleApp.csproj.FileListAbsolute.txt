@@ -187,3 +187,5 @@ C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp\bin\Debug\net6.0\Ban
 C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp\obj\Debug\net6.0\BankConsoleApp.csproj.CopyComplete
 C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp\obj\Debug\net6.0\BankConsoleApp.genruntimeconfig.cache
 C:\Users\carlo\OneDrive\Escritorio\Bank\Bank\BankConsoleApp\obj\Debug\net6.0\ref\BankConsoleApp.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp\bin\Debug\net6.0\BankConsoleApp.Service.dll
+D:\Users\destr\source\repos\Tasks\BankConsoleApp\Bank\BankConsoleApp\bin\Debug\net6.0\BankConsoleApp.Service.pdb

@@ -5,8 +5,5 @@
         Task Insert(TModel model);
         TModel GetById(uint id);
         Task Update(TModel model);
-        int numberOfAccounts();
-        void showAccounts();
-
     }
 }

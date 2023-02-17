@@ -16,6 +16,7 @@ namespace BankConsoleApp.DataAccess.Repository
         public AccountRepository(MySqlDbContext dbContext)
         {
             _dbContext = dbContext;
+            _dbContext.Transactions.ToList();
         }
 
         public Task Insert(Account model)
@@ -35,21 +36,6 @@ namespace BankConsoleApp.DataAccess.Repository
             _dbContext.Entry(model).State = EntityState.Modified;
             _dbContext.SaveChanges();
             return Task.CompletedTask;
-        }
-
-        public int numberOfAccounts()
-        {
-            int number = _dbContext.Accounts.Count<Account>();
-            return number;
-        }
-
-        public void showAccounts()
-        {
-            Console.WriteLine("Owner          Account Number");
-            for (int i = 0; i < numberOfAccounts(); i++)
-            {
-                Console.WriteLine(_dbContext.Accounts.ToArray<Account>()[i].Owner + "         " + _dbContext.Accounts.ToArray<Account>()[i].AccountNumber) ;
-            }
         }
     }
 }
