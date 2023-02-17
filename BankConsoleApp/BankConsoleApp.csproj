@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BankConsoleApp.Core\BankConsoleApp.Core.csproj" />
     <ProjectReference Include="..\BankConsoleApp.DataAccess\BankConsoleApp.DataAccess.csproj" />
+    <ProjectReference Include="..\BankConsoleApp.Service\BankConsoleApp.Service.csproj" />
   </ItemGroup>
 
 </Project>
