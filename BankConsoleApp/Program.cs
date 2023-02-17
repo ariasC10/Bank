@@ -3,6 +3,7 @@ using System;
 using BankConsoleApp.Core.Models;
 using BankConsoleApp.DataAccess.Db;
 using BankConsoleApp.DataAccess.Repository;
+using BankConsoleApp.Service.Accounts;
 
 namespace BankConsoleApp
 {
@@ -10,6 +11,7 @@ namespace BankConsoleApp
     {
         static void Main(string[] args)
         {
+            AccountsAppServices account = new AccountsAppServices();
             using (var db = new MySqlDbContext())
             {
                 while (true)
@@ -28,36 +30,35 @@ namespace BankConsoleApp
 
                     switch (opcion)
                     {
-                        case 1:
-                            Console.Write("Tipo de cuenta: ");
-                            var accountType = Console.ReadLine();
-
-                            Console.Write("Propietario: ");
+                        case 1: //ADD ACCOUNT
+                            Console.Write("Nombre del propietario: ");
                             var owner = Console.ReadLine();
 
-                            Console.Write("Saldo inicial: ");
-                            if (!decimal.TryParse(Console.ReadLine(), out decimal balance))
+                            Console.Write("Tipo de cuenta: ");
+                            var accountType = Console.ReadLine();
+                            
+                            if(string.IsNullOrEmpty(owner) && string.IsNullOrEmpty(accountType))
                             {
-                                Console.WriteLine("Saldo no válido.");
-                                continue;
-                            }
+                                Console.WriteLine("\nNO PUEDE INGRESAR VALORES NULOS");
+                                Console.Write("Nombre del propietario: ");
+                                owner = Console.ReadLine();
 
-                            db.AddAccount(owner, accountType);
+                                Console.Write("Tipo de cuenta: ");
+                                accountType = Console.ReadLine();
+                                
+                                continue;
+                            }  
+
+                            account.AddAccount(owner, accountType);
                             db.SaveChanges();
 
                             Console.WriteLine("Cuenta agregada correctamente.");
                             break;
 
-                        case 2:
-                            Console.Write("Número de cuenta: ");
-                            if (!int.TryParse(Console.ReadLine(), out int accountNumber))
-                            {
-                                Console.WriteLine("Número de cuenta no válido.");
-                                continue;
-                            }
+                        case 2: //DO TRANSACTION
 
                             Console.Write("Monto: ");
-                            if (!decimal.TryParse(Console.ReadLine(), out decimal amount))
+                            if (!float.TryParse(Console.ReadLine(), out float amount))
                             {
                                 Console.WriteLine("Monto no válido.");
                                 continue;
@@ -65,21 +66,20 @@ namespace BankConsoleApp
 
                             Console.Write("Descripción: ");
                             var description = Console.ReadLine();
-
-                            var success = db.DoTransaction(accountNumber, amount, description);
-                            if (success)
+                            if (string.IsNullOrEmpty(description))
                             {
-                                db.SaveChanges();
-                                Console.WriteLine("Transacción realizada correctamente.");
+                                description = Console.ReadLine();
+                                Console.WriteLine("Ingrese una descripción.");
+                                continue;
                             }
-                            else
-                            {
-                                Console.WriteLine("Error al realizar la transacción.");
-                            }
-
+                            account.AuthorizeTransaction(amount);
+                            account.DoTransaction(amount, description);
+                            db.SaveChanges();
+                            Console.WriteLine("Transacción realizada correctamente.");
+                                                                             
                             break;
 
-                        case 3:
+                        case 3: //GET 
                             return;
 
                         default:

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dq9TLmfPjTqCw5NQwnr6RKdMpo0kiiblN9lC7OKibFY9xpUDg5xcgto6gooFboQxXcCSRKUDC58Z2l5u5oaY7Q==",
+  "dgSpecHash": "5TEyH4hLKYmffLaYKa7D/pK2JTsaxONF3t/HmWQV84xQyMxE/9SsZG8t1YubOrEFupH1UuXs/q1Uu7BXltZwsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank-dev\\Bank-dev\\BankConsoleApp.Service\\BankConsoleApp.Service.csproj",
+  "projectFilePath": "C:\\Users\\AriasC\\Desktop\\Académia PS\\Bank\\BankConsoleApp.Service\\BankConsoleApp.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AriasC\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\AriasC\\.nuget\\packages\\google.protobuf\\3.11.4\\google.protobuf.3.11.4.nupkg.sha512",
