@@ -35,7 +35,7 @@ public class AccountsAppServices : IAccountsAppServices
 
         CurrentAccount = newAccount;
 
-        Console.WriteLine("The account was created succesfully!\n");
+        Console.WriteLine("\nThe account was created succesfully!\n");
     }
 
     public async void DoTransaction(float mount, string description)
@@ -70,7 +70,7 @@ public class AccountsAppServices : IAccountsAppServices
 
         await _repository.Update(CurrentAccount);
 
-        Console.WriteLine("The transaction was successfully!\n");
+        Console.WriteLine("\nThe transaction was successfully!\n");
     }
 
     public void GetBalanace()
@@ -86,7 +86,7 @@ public class AccountsAppServices : IAccountsAppServices
             balance += transaction.Mount;
         }
 
-        Console.WriteLine($"Account balance: {balance}\n");
+        Console.WriteLine($"\nAccount balance: {balance}\n");
     }
 
     public bool SelectAccount(uint id)
@@ -99,7 +99,7 @@ public class AccountsAppServices : IAccountsAppServices
         }
 
         CurrentAccount = account;
-        Console.WriteLine(CurrentAccount.Owner);
+        Console.WriteLine($"\nWelcome {CurrentAccount.Owner}!\n");
 
         return true;
     }
